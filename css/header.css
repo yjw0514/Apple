@@ -1,0 +1,55 @@
+
+/* gnb_nav css */
+.gnb_nav_wrap{
+    width: 100%;
+    height: 44px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* .gnb_nav {
+    width: 100%;
+    height: 100%;
+    padding: 0 24%;
+} */
+
+.gnb_nav_menu {
+    width: 100%;
+    height: 100%;
+    padding: 0 24%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gnb_nav_menu li {
+    height: 100%;
+}
+
+.gnb_nav_menu a img {
+    height: 100%;
+    padding: 0 10px;
+    vertical-align: middle;
+}
+
+.gnb_nav_menu_icon a img {
+    width: 38px;
+}
+
+/* banner css */
+.banner {
+    width: 100%;
+    height: 46px;
+}
+
+.banner p {
+    text-align: center;
+    padding: 12px 0;
+    color: rgb(29, 29, 31);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+}
+
+.banner p a:hover {
+    border-bottom:2px solid rgb(0, 102, 204);
+}
