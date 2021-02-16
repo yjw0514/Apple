@@ -1,54 +1,439 @@
-/* hero css */
-.hero_wrap {
+/* iPhone 12 css */
+.iphone_12_wrap {
     width: 100%;
     height: 736px;
     background-image: url(../img/iphone_12_us__fo0stbby242m_largetall.jpg);
-    background-size: cover;
-    background-position: center center;
+    margin: 0 0 12px 0;
 }
 
-.hero {
+.banner {
     width: 100%;
+    height: 46px;
+    margin: 44px 0 0 0;
+    position: relative;
+}
+
+.banner p {
     text-align: center;
-    padding: 47px 0 0 0;
-}
-
-.hero h4 {
-    font-size: 56px;
-    font-weight: 600;
-}
-
-.hero h5 {
-    font-size: 28px;
+    padding: 12px 0;
+    color: rgb(29, 29, 31);
+    font-size: 14px;
     font-weight: 400;
+    line-height: 22px;
+    letter-spacing: normal;
+}
+
+.banner p a:hover {
+    border-bottom:2px solid rgb(0, 102, 204);
+}
+
+.iphone_12 {
+    width: 100%;
+    height: 246px;
+    text-align: center;
+    padding: 55px 0 0 0;
+}
+
+.iphone_12 h3 {
     margin: 6px 0 0 0;
 }
 
-.hero p {
+.iphone_12 p {
     font-size: 17px;
     font-weight: 400;
     margin: 13px 0 0 0;
     color: rgb(134, 134, 139);
 }
 
-.hero div {
+.iphone_12 div {
     display: flex;
     justify-content: center;
     margin: 13px 0 0 0;
 }
 
-.hero div a {
+.iphone_12 div a {
     font-size: 21px;
     font-weight: 400;
     line-height: 32px;
 }
 
-.hero div a span:hover {
+.iphone_12 div a span:hover {
     border-bottom:2px solid rgb(0, 102, 204);
 }
 
 
-.hero div a:nth-child(2) {
+.iphone_12 div a:nth-child(2) {
     margin: 0 0 0 35px;
+}
+
+/* iPhone 12 Pro css */
+.iphone_12_Pro_wrap {
+    width: 100%;
+    height: 736px;
+    background-image: url(../img/iphone_12_pro_us__e5oyysg4k0ya_largetall.jpg);
+    margin: 0 0 12px 0;
+}
+
+.iphone_12_Pro {
+    width: 100%;
+    height: 246px;
+    text-align: center;
+    padding: 55px 0 0 0;
+}
+
+.iphone_12_Pro h2 {
+    color: rgb(245, 245, 247);
+}
+
+.iphone_12_Pro h3 {
+    margin: 6px 0 0 0;
+    color: rgb(245, 245, 247);
+}
+
+.iphone_12_Pro p {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 13px 0 0 0;
+    color: rgb(134, 134, 139);
+}
+
+.iphone_12_Pro div {
+    display: flex;
+    justify-content: center;
+    margin: 13px 0 0 0;
+}
+
+.iphone_12_Pro div a {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.iphone_12_Pro div a span:hover {
+    border-bottom:2px solid rgb(0, 102, 204);
+}
+
+
+.iphone_12_Pro div a:nth-child(2) {
+    margin: 0 0 0 35px;
+}
+
+/* iPad Air css */
+.ipad_air_wrap {
+    width: 100%;
+    height: 736px;
+    background-image: url(../img/hero__dvsxv8smkkgi_largetall.jpg);
+    background-size: auto;
+    background-position: center bottom;
+    margin: 0 0 12px 0;
+}
+
+.ipad_air {
+    width: 100%;
+    height: 246px;
+    text-align: center;
+    padding: 55px 0 0 0;
+}
+
+.ipad_air h3 {
+    margin: 6px 0 0 0;
+}
+
+.ipad_air p {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 13px 0 0 0;
+    color: rgb(134, 134, 139);
+}
+
+.ipad_air div {
+    display: flex;
+    justify-content: center;
+    margin: 13px 0 0 0;
+}
+
+.ipad_air div a {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.ipad_air div a span:hover {
+    border-bottom:2px solid rgb(0, 102, 204);
+}
+
+
+.ipad_air div a:nth-child(2) {
+    margin: 0 0 0 35px;
+}
+
+/* watch css */
+.watch_wrap {
+    width: 100%;
+    height: 580px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 12px 0;
+}
+
+.watch_1{
+    width: calc(50% - 12px);
+    height: 100%;  
+    margin: 0 12px;
+    background-image: url(../img/watch_series6.jpg);
+    background-size: auto;
+    background-position: center bottom;
+    background-color:rgb(0,0,0);
+}
+
+.watch_1 {
+    text-align: center;
+}
+
+.watch_1 img {
+    margin: 40px 0 0 0;
+}
+
+.watch_1 h5 {
+    color: rgb(245, 245, 247);
+    margin: 11px 0 0 0;
+}
+
+.watch_1 div {
+    margin: 12px 0 0 0;
+}
+
+.watch_1 div a {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.watch_1  div a span:hover {
+    border-bottom:2px solid rgb(0, 102, 204);
+}
+
+
+.watch_1  div a:nth-child(2) {
+    margin: 0 0 0 28px;
+}
+
+
+.watch_2{
+    width: calc(50% - 12px);
+    height: 100%;  
+    margin: 0 12px 0 0;
+    background-image: url(../img/promo_watch_black_unity_collection__glt5v0ra46q2_large.jpg);
+    background-size: auto;
+    background-position: center center;
+}
+
+.watch_2 {
+    text-align: center;
+}
+
+.watch_2 img {
+    margin: 40px 0 0 0;
+}
+
+.watch_2 h5 {
+    color: rgb(245, 245, 247);
+    margin: 11px 0 0 0;
+}
+
+.watch_2 div {
+    margin: 12px 0 0 0;
+}
+
+.watch_2 div a {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.watch_2  div a span:hover {
+    border-bottom:2px solid rgb(0, 102, 204);
+}
+
+
+.watch_2  div a:nth-child(2) {
+    margin: 0 0 0 28px;
+}
+
+/* macbook css */
+.macbook_wrap {
+    width: 100%;
+    height: 580px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 12px 0;
+}
+
+.macbook_1{
+    width: calc(50% - 12px);
+    height: 100%;  
+    margin: 0 12px;
+    background-image: url(../img/macbook_pro_13__koscrc0x6wam_large.jpg);
+    background-size: auto;
+    background-position: center center;
+
+}
+
+.macbook_1 {
+    text-align: center;
+    color: rgb(245, 245, 247);
+}
+
+.macbook_1 p {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 29px 0 0 0;
+}
+
+.macbook_1 h4 {
+    margin: 2px 0 0 0;
+}
+
+.macbook_1 h5 {
+    margin: 4px 0 0 0;
+}
+
+.macbook_1 div {
+    margin: 12px 0 0 0;
+}
+
+.macbook_1 div a {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.macbook_1  div a span:hover {
+    border-bottom:2px solid rgb(0, 102, 204);
+}
+
+
+.macbook_1  div a:nth-child(2) {
+    margin: 0 0 0 28px;
+}
+
+.macbook_2{
+    width: calc(50% - 12px);
+    height: 100%;  
+    margin: 0 12px 0 0;
+    background-image: url(../img/macbook_air__knzp0i282eyy_large.jpg);
+    background-size: auto;
+    background-position: center center;
+}
+
+.macbook_2 {
+    text-align: center;
+    color: rgb(245, 245, 247);
+}
+
+
+.macbook_2 h4 {
+    margin: 53px 0 0 0;
+}
+
+.macbook_2 h5 {
+    margin: 4px 0 0 0;
+}
+
+.macbook_2 div {
+    margin: 12px 0 0 0;
+}
+
+.macbook_2 div a {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.macbook_2  div a span:hover {
+    border-bottom:2px solid rgb(0, 102, 204);
+}
+
+
+.macbook_2  div a:nth-child(2) {
+    margin: 0 0 0 28px;
+}
+
+/* notice css */
+.notice_wrap {
+    width: 100%;
+    height: 580px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 12px 0;
+}
+
+.notice_1{
+    width: calc(50% - 12px);
+    height: 100%;  
+    margin: 0 12px;
+    background-image: url(../img/promo_large.jpg);
+    background-size: auto;
+    background-position: center center;
+}
+
+.notice_1 {
+    text-align: center;
+}
+
+
+.notice_1 h4 {
+    margin: 53px 0 0 0;
+}
+
+.notice_1 h5 {
+    margin: 4px 0 0 0;
+}
+
+.notice_1 div {
+    margin: 12px 0 0 0;
+}
+
+.notice_1 div a {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.notice_1  div a span:hover {
+    border-bottom:2px solid rgb(0, 102, 204);
+}
+
+.notice_2{
+    width: calc(50% - 12px);
+    height: 100%;  
+    margin: 0 12px 0 0;
+    background-image: url(../img/tile__cauwwcyyn9hy_large.jpg);
+    background-size: auto;
+    background-position: center bottom;
+    background-color:rgb(241,241,243);
+}
+
+.notice_2 {
+    text-align: center;
+}
+
+
+.notice_2 h4 {
+    margin: 53px 0 0 0;
+}
+
+.notice_2 div {
+    margin: 12px 0 0 0;
+}
+
+.notice_2 div a {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.notice_2  div a span:hover {
+    border-bottom:2px solid rgb(0, 102, 204);
 }
 

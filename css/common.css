@@ -1,7 +1,94 @@
+@font-face {
+    font-family: "SF Pro KR";
+    font-weight: 300;
+    src: url(../font/SFProKRDisplay_light.woff2) format("woff2");
+    }
+    
+
+@font-face {
+    font-family: "SF Pro KR";
+    font-weight: 400;
+    src: url(../font/SFProKRDisplay_regular.woff2) format("woff2");
+  }
+
+@font-face {
+font-family: "SF Pro KR";
+font-weight: 500;
+src: url(../font/SFProKRDisplay_semibold.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "SF Pro KR";
+    font-weight: 600;
+    src: url(../font/SFProKRDisplay_bold.woff2) format("woff2");
+    }
+
+@font-face {
+    font-family: "SF Pro Text";
+    font-weight: 300;
+    src: url(../font/sf-pro-text_light.woff2) format("woff2");
+    }
+    
+@font-face {
+    font-family: "SF Pro Text";
+    font-weight: 400;
+    src: url(../font/sf-pro-text_regular.woff2) format("woff2");
+    }
+
+@font-face {
+    font-family: "SF Pro Text";
+    font-weight: 500;
+    src: url(../font/sf-pro-text_semibold.woff2) format("woff2");
+    }
+
+@font-face {
+    font-family: "SF Pro Text";
+    font-weight: 600;
+    src: url(../font/sf-pro-text_bold.woff2) format("woff2");
+    }
+
+@font-face {
+    font-family: "SF Pro Text";
+    font-weight: 700;
+    src: url(../font/sf-pro-text_heavy.woff2) format("woff2");
+    }
+
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 400;
+    src: url(../font/sf-pro-display_regular.woff2) format("woff2");
+    }
+       
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 500;
+    src: url(../font/sf-pro-display_semibold.woff2) format("woff2");
+    }
+
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 600;
+    src: url(../font/sf-pro-display_bold.woff2) format("woff2");
+    }
+         
+@font-face {
+    font-family: "SF Pro Display";
+    font-weight: 700;
+    src: url(../font/sf-pro-display_heavy.woff2) format("woff2");
+    }
+ 
+    
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'SF Pro KR', 'SF Pro Display';
+    letter-spacing: normal;
 }
 
 ul {
@@ -12,8 +99,55 @@ a {
     text-decoration: none;
 }
 
+div {
+    cursor: pointer;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
 /* font-color */
 .c_point {
     color: rgb(0, 102, 204);
+}
+
+/* font style */
+h2 {
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 66px;
+}
+
+h3 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+h4 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h5 {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+/* margin */
+.mt_2 {
+    margin-top: 2px;
+}
+
+.mt_4 {
+    margin-top: 4px;
+}
+
+.mt_12 {
+    margin-top: 12px;
+}
+
+.mt_53 {
+    margin-top: 53px;
 }
