@@ -1,153 +1,181 @@
-@font-face {
-    font-family: "SF Pro KR";
-    font-weight: 300;
-    src: url(../font/SFProKRDisplay_light.woff2) format("woff2");
-    }
-    
+/* 한국어 전용 웹폰트 */
 
 @font-face {
-    font-family: "SF Pro KR";
-    font-weight: 400;
-    src: url(../font/SFProKRDisplay_regular.woff2) format("woff2");
-  }
+  font-family: "SF Pro KR";
+  src: url(../font/SFProKRDisplay_light.woff2) format("woff2");
+  font-weight: 200;
+}
+/* font-weight값을 지정하지 않으면 해당 글씨체 사용 시 두께값 동일 */
 
 @font-face {
-font-family: "SF Pro KR";
-font-weight: 500;
-src: url(../font/SFProKRDisplay_semibold.woff2) format("woff2");
+  font-family: "SF Pro KR";
+  src: url(../font/SFProKRDisplay_regular.woff2) format("woff2");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: "SF Pro KR";
-    font-weight: 600;
-    src: url(../font/SFProKRDisplay_bold.woff2) format("woff2");
-    }
+  font-family: "SF Pro KR";
+  src: url(../font/SFProKRDisplay_semibold.woff2) format("woff2");
+  font-weight: 600;
+}
 
 @font-face {
-    font-family: "SF Pro Text";
-    font-weight: 300;
-    src: url(../font/sf-pro-text_light.woff2) format("woff2");
-    }
-    
+  font-family: "SF Pro KR";
+  src: url(../font/SFProKRDisplay_bold.woff2) format("woff2");
+  font-weight: 800;
+}
+
+/* 본문용 영문 웹폰트 */
 @font-face {
-    font-family: "SF Pro Text";
-    font-weight: 400;
-    src: url(../font/sf-pro-text_regular.woff2) format("woff2");
-    }
+  font-family: "SF Pro Text";
+  src: url(../font/sf-pro-text_light.woff2) format("woff2");
+  font-weight: 200;
+}
 
 @font-face {
-    font-family: "SF Pro Text";
-    font-weight: 500;
-    src: url(../font/sf-pro-text_semibold.woff2) format("woff2");
-    }
+  font-family: "SF Pro Text";
+  src: url(../font/sf-pro-text_regular.woff2) format("woff2");
+  font-weight: 400;
+}
 
 @font-face {
-    font-family: "SF Pro Text";
-    font-weight: 600;
-    src: url(../font/sf-pro-text_bold.woff2) format("woff2");
-    }
+  font-family: "SF Pro Text";
+  src: url(../font/sf-pro-text_semibold.woff2) format("woff2");
+  font-weight: 600;
+}
 
 @font-face {
-    font-family: "SF Pro Text";
-    font-weight: 700;
-    src: url(../font/sf-pro-text_heavy.woff2) format("woff2");
-    }
+  font-family: "SF Pro Text";
+  src: url(../font/sf-pro-text_bold.woff2) format("woff2");
+  font-weight: 800;
+}
 
 @font-face {
-    font-family: "SF Pro Display";
-    font-weight: 400;
-    src: url(../font/sf-pro-display_regular.woff2) format("woff2");
-    }
-       
+  font-family: "SF Pro Text";
+  src: url(../font/sf-pro-text_heavy.woff2) format("woff2");
+  font-weight: 900;
+}
+
+/* 제목용 영문 웹폰트 */
 @font-face {
-    font-family: "SF Pro Display";
-    font-weight: 500;
-    src: url(../font/sf-pro-display_semibold.woff2) format("woff2");
-    }
+  font-family: "SF Pro Display";
+  src: url(../font/sf-pro-display_regular.woff2) format("woff2");
+  font-weight: 400;
+}
 
 @font-face {
-    font-family: "SF Pro Display";
-    font-weight: 600;
-    src: url(../font/sf-pro-display_bold.woff2) format("woff2");
-    }
-         
+  font-family: "SF Pro Display";
+  src: url(../font/sf-pro-display_semibold.woff2) format("woff2");
+  font-weight: 600;
+}
+
 @font-face {
-    font-family: "SF Pro Display";
-    font-weight: 700;
-    src: url(../font/sf-pro-display_heavy.woff2) format("woff2");
-    }
- 
-    
+  font-family: "SF Pro Display";
+  src: url(../font/sf-pro-display_bold.woff2) format("woff2");
+  font-weight: 800;
+}
 
+@font-face {
+  font-family: "SF Pro Display";
+  src: url(../font/sf-pro-display_heavy.woff2) format("woff2");
+  font-weight: 900;
+}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* 특수문자용 웹폰트 */
+@font-face {
+  font-family: "SF Pro Icons";
+  src: url(../font/sf-pro-icons_light.woff2) format("woff2");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "SF Pro Icons";
+  src: url(../font/sf-pro-icons_regular.woff2) format("woff2");
+  font-weight: 400;
 }
 
 body {
-    font-family: 'SF Pro KR', 'SF Pro Display';
-    letter-spacing: normal;
+  font-family: "SF Pro KR", "SF Pro Text", "SF Pro Icons", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: rgb(29, 29, 31);
+  -webkit-font-smoothing: antialiased;
 }
 
-ul {
-    list-style: none;
+/* Layout Style */
+
+button:hover {
+  cursor: pointer;
 }
 
-a {
-    text-decoration: none;
-}
+/* Text Style */
 
-div {
-    cursor: pointer;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-/* font-color */
-.c_point {
-    color: rgb(0, 102, 204);
-}
-
-/* font style */
 h2 {
-    font-size: 56px;
-    font-weight: 500;
-    line-height: 66px;
+  font-family: "SF Pro KR", "SF Pro Display", "SF Pro Icons", sans-serif;
+  font-size: 56px;
+  line-height: 66px;
+  font-weight: 600;
+  letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
 }
 
 h3 {
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 31px;
+  font-family: "SF Pro KR", "SF Pro Text", "SF Pro Icons", sans-serif;
+  font-size: 28px;
+  line-height: 31px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  -webkit-font-smoothing: antialiased;
 }
 
 h4 {
-    font-size: 40px;
-    font-weight: 500;
+  font-family: "SF Pro KR", "SF Pro Text", "SF Pro Icons", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
 }
 
 h5 {
-    font-size: 21px;
-    font-weight: 400;
-    line-height: 23px;
+  font-family: "SF Pro KR", "SF Pro Text", "SF Pro Icons", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* margin */
-.mt_2 {
-    margin-top: 2px;
+p {
+  font-family: "SF Pro KR", "SF Pro Text", "SF Pro Icons", sans-serif;
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 400;
+  letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
 }
 
-.mt_4 {
-    margin-top: 4px;
+@media screen and (max-width: 1068px) {
+  h2 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
 }
 
-.mt_12 {
-    margin-top: 12px;
-}
+@media screen and (max-width: 740px) {
+  h2 {
+    font-size: 32px;
+    line-height: 39px;
+  }
 
-.mt_53 {
-    margin-top: 53px;
+  h3 {
+    font-size: 19px;
+    line-height: 29px;
+  }
 }

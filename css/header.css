@@ -1,34 +1,115 @@
+header {
+  width: 100%;
+}
 
-/* gnb_nav css */
-.gnb_nav_wrap{
+.gnb {
+  width: 100%;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+}
+
+.gnb_menu {
+  width: 100%;
+  max-width: 1000px;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.gnb_menu_m {
+  display: none;
+}
+
+.gnb_menu_items a {
+  color: rgb(245, 245, 247);
+  font-size: 14px;
+  line-height: 44px;
+  padding: 10px;
+}
+
+.gnb_menu li a {
+  color: rgb(245, 245, 247);
+}
+
+.gnb_logo a {
+  display: block;
+  width: 36px;
+  height: 44px;
+  background-image: url(../img/globalnav_apple_image__cxwwnrj0urau_large.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.gnb_search a {
+  display: block;
+  width: 36px;
+  height: 44px;
+  background-image: url(../img/globalnav_search_image__fca9mfoh8a2q_large.svg);
+  background-position: 10px 0;
+  background-repeat: no-repeat;
+  background-size: 18px 88px;
+}
+
+.gnb_bag a {
+  display: block;
+  width: 36px;
+  height: 44px;
+  background-image: url(../img/globalnav_bag_image__bmix8075eg4i_large.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767px) {
+  .gnb {
+    display: none;
+  }
+
+  .gnb_m {
     width: 100%;
-    height: 44px;
+    height: 48px;
+    padding: 0 12px;
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
     left: 0;
-}
+    z-index: 10000;
+  }
 
-.gnb_nav_menu {
+  .gnb_menu_m {
     width: 100%;
-    height: 100%;
-    padding: 0 24%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    margin: 0 auto;
+  }
 
-.gnb_nav_menu li {
-    height: 100%;
-}
-
-.gnb_nav_menu a img {
-    height: 100%;
-    padding: 0 10px;
+  .gnb_menubar img {
+    width: 20px;
+    height: 20px;
     vertical-align: middle;
-}
+  }
 
-.gnb_nav_menu_icon a img {
+  .gnb_logo_m a {
+    display: block;
     width: 38px;
-}
+    height: 48px;
+    background-image: url(../img/globalnav_apple_image__cxwwnrj0urau_large.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 
+  .gnb_bag_m a {
+    display: block;
+    width: 25px;
+    height: 44px;
+    background-image: url(../img/globalnav_bag_image__bmix8075eg4i_large.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}

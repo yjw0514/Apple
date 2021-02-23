@@ -3,131 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Apple">
+    <meta name="dscription" content="iPhone, Mac, Apple Watch, iPad, AirPods 등 지금 쇼핑하기. Apple Store 픽업. 무료 배송.">
+    <meta name="application-name" content="Apple.com">
     <title>Apple</title>
+    <link rel="stylesheet" href="css/reset_apple.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/index.css">
 
 </head>
 <body>
     <header>
-        <nav class="gnb_nav_wrap">
-            <div class="gnb_nav">
-                <ul class="gnb_nav_menu">
-                    <li class="gnb_nav_menu_icon"><a href=""><img src="img/apple.svg"></a></li>
-                    <li><a href=""><img src="img/globalnav_links_mac_image__fv4ktb435mum_large.svg"></a></li>
-                    <li><a href=""><img src="img/globalnav_links_ipad_image__fefum478f4uq_large.svg"></a></li>
-                    <li><a href=""><img src="img/globalnav_links_iphone_image__dhepc4hn14cy_large.svg"></a></li>
-                    <li><a href=""><img src="img/globalnav_links_watch_image__dfo5u4bhooqe_large.svg"></a></li>
-                    <li><a href=""><img src="img/globalnav_links_music_image__bewxrazzig02_large.svg"></a></li>
-                    <li><a href=""><img src="img/globalnav_links_support_image__b24reo1n4fbm_large.svg"></a></li>
-                    <li class="gnb_nav_menu_icon"><a href=""><img src="img/search.svg"></a></li>
-                    <li class="gnb_nav_menu_icon"><a href=""><img src="img/bag.svg"></a></li>
-                </ul>
-            </div>
+        <!-- PC, Tablet용 gnb -->
+        <nav class="gnb">
+            <ul class="gnb_menu">
+                <li class="gnb_logo"><a href=""></a></li>
+                <li class="gnb_menu_items"><a href="">Mac</a></li>
+                <li class="gnb_menu_items"><a href="">iPad</a></li>
+                <li class="gnb_menu_items"><a href="">iPhone</a></li>
+                <li class="gnb_menu_items"><a href="">Watch</a></li>
+                <li class="gnb_menu_items"><a href="">Music</a></li>
+                <li class="gnb_menu_items"><a href="">고객지원</a></li>
+                <li class="gnb_search"><a href=""></a></li>
+                <li class="gnb_bag"><a href=""></a></li>
+            </ul>
         </nav>
 
+        <!-- Mobile용 gnb -->
+        <nav class="gnb_m">
+            <ul class="gnb_menu_m">
+                <li class="gnb_menubar"><a href=""><img src="img/menubar_2line.svg"> </a></li>
+                <li class="gnb_logo_m"><a href=""></a></li>
+                <li class="gnb_bag_m"><a href=""></a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <!-- iPhone 12 -->
-            <div class="iphone_12_wrap" >
-                <div class="banner">
-                    <p><a href="" class="c_point">온라인으로 쇼핑</a>하고 무료 배송, 스페셜리스트 지원 등의 혜택을 받으세요.</p>
-                </div>
-                <div class="iphone_12">
-                    <h2>iPhone 12</h2>
-                    <h3>스피드 그 이상의 스피드</h3>
-                    <p>가격은 ₩950,000부터(보상 판매* 미적용)</p>
-                    <div>
-                        <a href="" class="c_point"><span>더 알아보기</span> ></a>
-                        <a href="" class="c_point"><span>구입하기</span> ></a>
+        <!-- banner contents -->
+        <section id="banner">
+            <div class="banner_wrap">
+                <p class="banner_text"><a href="">온라인으로 쇼핑</a>하고 무료 배송, 스페셜리스트 지원 등의 혜택을 받으세요.</p>
+            </div>
+        </section>
+
+        <!-- Hero -->
+        <section id="hero">
+            <!-- Hero iPhone12 -->
+            <div class="hero_1_wrap" onclick="document.location='https://www.apple.com/kr/iphone-12/'">
+                    <h2 class="hero_headline_black">iPhone 12</h2>
+                    <h3 class="hero_subhead_black">스피드 그 이상의 스피드.</h3>
+                    <p class="hero_price_info">가격은 &#65510;950,000부터(보상 판매<sup>*</sup> 미적용)</p>
+                    <div class="hero_link_whitebg">
+                        <a href="">더 알아보기 &#8250;</a>
+                        <a href="">구입하기 &#8250;</a>
                     </div>
+            </div>
+
+            <!-- Hero iPhone12 Pro -->
+            <div class="hero_2_wrap" onclick="document.location='https://www.apple.com/kr/iphone-12/'">
+                <h2 class="hero_headline_white">iPhone 12 Pro</h2>
+                <h3 class="hero_subhead_white">도약의 시간</h3>
+                <p class="hero_price_info">가격은 &#65510;1,350,000부터(보상 판매<sup>*</sup> 미적용)</p>
+                <div class="hero_link_blackbg">
+                    <a href="">더 알아보기 &#8250;</a>
+                    <a href="">구입하기 &#8250;</a>
                 </div>
             </div>
 
-        <!-- iPhone 12 Pro-->
-        <div class="iphone_12_Pro_wrap" onclick="document.location='https://www.apple.com/kr/iphone-12-pro/'">
-            <div class="iphone_12_Pro">
-                <h2>iPhone 12 Pro</h2>
-                <h3>도약의 시간.</h3>
-                <p>가격은 ₩1,350,000부터(보상 판매* 미적용)</p>
-                <div>
-                    <a href="" class="c_point"><span>더 알아보기</span> ></a>
-                    <a href="" class="c_point"><span>구입하기</span> ></a>
+            <!-- Hero iPad Air -->
+            <div class="hero_3_wrap" onclick="document.location='https://www.apple.com/kr/iphone-12/'">
+                <h2 class="hero_headline_black">iPad Air</h2>
+                <h3 class="hero_subhead_black">강력하다. 다채롭다. 경이롭다.</h3>
+                <div class="hero_link_whitebg">
+                    <a href="">더 알아보기 &#8250;</a>
+                    <a href="">가격 보기 &#8250;</a>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- iPad Air-->
-        <div class="ipad_air_wrap" onclick="document.location='https://www.apple.com/kr/ipad-air/'">
-            <div class="ipad_air">
-                <h2>iPad Air</h2>
-                <h3>강력하다. 다채롭다. 경이롭다.</h3>
-                <div>
-                    <a href="" class="c_point"><span>더 알아보기</span> ></a>
-                    <a href="" class="c_point"><span>가격 보기</span> ></a>
-                </div>
-            </div>
-        </div>
+        <!-- Promotion Section -->
+        <section id="promo">
+            <div class="promo_wrap">
+                <ul class="promo">
 
-        <!-- watch-->
-        <div class="watch_wrap" >
-            <div class="watch_1" onclick="document.location='https://www.apple.com/kr/apple-watch-series-6/'">
-                    <img src="img/logo__dcojfwkzna2q_large.png" >
-                <h5>건강의 미래, 이미 손목 위에.</h5>
-                <div>
-                    <a href="" class="c_point"><span>더 알아보기</span> ></a>
-                    <a href="" class="c_point"><span>구입하기</span> ></a>
-                </div>
-            </div>
-            <div class="watch_2" onclick="document.location='https://www.apple.com/kr/apple-watch-series-6/'">
-                    <img src="img/logo__dcojfwkzna2q_large.png" >
-                <h5>Black Unity Collection을 소개합니다.</h5>
-                <div>
-                    <a href="" class="c_point"><span>더 알아보기</span> ></a>
-                    <a href="" class="c_point"><span>구입하기</span> ></a>
-                </div>
-            </div>
-        </div>
+                    <!-- Promotion 1 -->
+                    <li class="promo_1" onclick="document.location='https://www.apple.com/kr/iphone-12/'">
+                        <img src="img/logo__dcojfwkzna2q_large.png">
+                        <h3 class="promo_subhead_white">건강의 미래, 이미 손목 위에
+                        </h3>
+                        <div class="promo_link_blackbg">
+                            <a href="">더 알아보기 &#8250;</a>
+                            <a href="">구입하기 &#8250;</a>
+                        </div>
+                    </li>
+                    <!-- Promotion 2 -->
+                    <li class="promo_2" onclick="document.location='https://www.apple.com/kr/iphone-12/'">
+                        <img src="img/promo_logo_watch_black_unity_collection__ejah52gcci0y_large.png">
+                        <h3 class="promo_subhead_white">Black Unity Collection을 소개합니다.
+                        </h3>
+                        <div class="promo_link_blackbg">
+                            <a href="">더 알아보기 &#8250;</a>
+                            <a href="">구입하기 &#8250;</a>
+                        </div>
+                    </li>
 
-        <!-- MacBook-->
-        <div class="macbook_wrap" >
-            <div class="macbook_1" onclick="document.location='https://www.apple.com/kr/apple-watch-series-6/'">
-                <p>13형 모델</p> 
-                <h4>MacBook Pro</h4>
-                <h5>프로 중의 프로.</h5>
-                <div>
-                    <a href="" class="c_point"><span>더 알아보기</span> ></a>
-                    <a href="" class="c_point"><span>구입하기</span> ></a>
-                </div>
-            </div>
-            <div class="macbook_2" onclick="document.location='https://www.apple.com/kr/apple-watch-series-6/'">
-                <h4>MacBook Air</h4>
-                <h5>Air의 흐름을 바꾸다.</h5>
-                <div>
-                    <a href="" class="c_point"><span>더 알아보기</span> ></a>
-                    <a href="" class="c_point"><span>구입하기</span> ></a>
-                </div>
-            </div>
-        </div>
+                    <!-- Promotion 3 -->
+                    <li class="promo_3" onclick="document.location='https://www.apple.com/kr/iphone-12/'">
+                        <p class="promo_eyebrow">13형 모델</p>
+                        <h2 class="promo_headline_white">MacBook Pro</h2>
+                        <h3 class="promo_subhead_white">프로 중의 프로.
+                        </h3>
+                        <div class="promo_link_blackbg">
+                            <a href="">더 알아보기 &#8250;</a>
+                            <a href="">구입하기 &#8250;</a>
+                        </div>
+                    </li>
 
-        <!-- notice-->
-        <div class="notice_wrap" >
-            <div class="notice_1" onclick="document.location='https://www.apple.com/kr/apple-watch-series-6/'">
-                <h4>Apple 여의도</h4>
-                <h5>곧 만나요.</h5>
-                <div>
-                    <a href="" class="c_point"><span>더 알아보기</span> ></a>
-                </div>
+                    <!-- Promotion 4 -->
+                    <li class="promo_4" onclick="document.location='https://www.apple.com/kr/iphone-12/'">
+                        <h2 class="promo_headline_white">MacBook Air</h2>
+                        <h3 class="promo_subhead_white">Air의 흐름을 바꾸다.
+                        </h3>
+                        <div class="promo_link_blackbg">
+                            <a href="">더 알아보기 &#8250;</a>
+                            <a href="">구입하기 &#8250;</a>
+                        </div>
+                    </li>
+
+                    <!-- Promotion 5 -->
+                    <li class="promo_5" onclick="document.location='https://www.apple.com/kr/iphone-12/'">
+                        <h2 class="promo_headline_black"> Apple 여의도</h2>
+                        <h3 class="promo_subhead_black">곧 만나요.</h3>
+                        <div class="promo_link_whitebg">
+                        <a href="">더 알아보기 &#8250;</a>
+                        </div>
+                    </li>  
+
+                    <!-- Promotion 6 -->
+                    <li class="promo_6" onclick="document.location='https://www.apple.com/kr/iphone-12/'">
+                        <h2 class="promo_headline_black"> 대학생활용 Mac 또는 iPad 구입하고 AirPods까지 덤으로.</h2>
+                        <div class="promo_link_whitebg">
+                        <a href="">쇼핑하기 &#8250;</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="notice_2" onclick="document.location='https://www.apple.com/kr/apple-watch-series-6/'">
-                <h4>대학 생활용 Mac 또는 iPad<br>
-                구입하고 AirPods까지 덤으로.</h4>
-                <div>
-                    <a href="" class="c_point"><span>쇼핑하기</span> ></a>
-                </div>
-            </div>
-        </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="footer_wrap">
+            <p class="footer_note">
+                * 보상 판매 프로그램은 Apple의 파트너이자 독립적으로 운영되는 제3의 업체에 의해 제공됩니다. Apple 및 Apple의 계열사는 고객과 파트너 간 계약의 당사자가 아닙니다. 보상 판매 금액은 보상 판매되는 스마트폰의 상태 및 모델에 따라 달라집니다. 19세 이상이어야 합니다. 일부 매장에서는 본 프로그램을 이용할 수 없으며, 일부 기기는 보상 판매 대상이 아닙니다. Apple은 어떤 기기든 수령을 거부하거나, 그 수량을 제한할 권리를 보유합니다. 새 Apple 기기 구매 시, 현재 소유한 기기의 가치만큼 할인을 받을 수도 있습니다. 추가 약관은 <a href="">apple.com/kr/trade-in</a>을 참고하십시오.
+            </p>
+            <nav class="footer_nav">
+                <div class="footer_nav_wrap">
+                    <ul>
+                        <h4><span>쇼핑 및 알아보기</span><span>+</span></h4>
+                        <li><a href="">Mac</a></li>
+                        <li><a href="">iPad</a></li>
+                        <li><a href="">iPhone</a></li>
+                        <li><a href="">Watch</a></li>
+                        <li><a href="">Music</a></li>
+                        <li><a href="">AirPods</a></li>
+                        <li><a href="">iPod touch</a></li>
+                        <li><a href="">액세서리</a></li>
+                    </ul>
+                </div>
+                <div class="footer_nav_wrap">
+                    <ul>
+                        <h4><span>서비스</span><span>+</span></h4>
+                        <li><a href="">Apple music</a></li>
+                        <li><a href="">Apple Arcade</a></li>
+                        <li><a href="">iCloud</a></li>
+                        <li><a href="">Apple Books</a></li>
+                        <li><a href="">App Store</a></li>
+                    </ul>
+                    <ul>
+                        <h4><span>계정</span><span>+</span></h4>
+                        <li><a href="">Apple ID 관리</a></li>
+                        <li><a href="">Apple Store 계정</a></li>
+                        <li><a href="">iCloud.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer_nav_wrap">
+                    <ul>
+                        <h4><span>Apple Store</span><span>+</span></h4>
+                        <li><a href="">매장 찾기</a></li>
+                        <li><a href="">온라인에서 쇼핑하기</a></li>
+                        <li><a href="">Genius Bar</a></li>
+                        <li><a href="">Today at Apple</a></li>
+                        <li><a href="">Apple 캠프</a></li>
+                        <li><a href="">Apple Store 앱</a></li>
+                        <li><a href="">리퍼 및 특가 제품</a></li>
+                        <li><a href="">금융 혜택</a></li>
+                        <li><a href="">Apple Trade In</a></li>
+                        <li><a href="">주문 상태</a></li>
+                        <li><a href="">쇼핑 도움말</a></li>
+                    </ul>
+                </div>
+                <div class="footer_nav_wrap">
+                    <ul>
+                        <h4><span>비즈니스</span><span>+</span></h4>
+                        <li><a href="">Apple과 비즈니스</a></li>
+                        <li><a href="">비즈니스를 위한 제품 쇼핑하기</a></li>
+                       
+                    </ul>
+                    <ul>
+                        <h4><span>교육</span><span>+</span></h4>
+                        <li><a href="">Apple과 교육</a></li>
+                        <li><a href="">초중고용 제품 쇼핑하기</a></li>
+                        <li><a href="">대학 생활을 위한 제품 쇼핑하기</a></li>
+                    </ul>
+                </div>
+                <div class="footer_nav_wrap">
+                    <ul>
+                        <h4><span>Apple의 가치관</span><span>+</span></h4>
+                        <li><a href="">손쉬운 사용</a></li>
+                        <li><a href="">환경</a></li>
+                        <li><a href="">개인정보 보호</a></li>
+                        <li><a href="">협력업체에 대한 책임</a></li>
+                    </ul>
+                    <ul>
+                        <h4><span>Apple 정보</span><span>+</span></h4>
+                        <li><a href="">Newsroom</a></li>
+                        <li><a href="">Apple 리더십</a></li>
+                        <li><a href="">채용 안내</a></li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">일자리 창출</a></li>
+                        <li><a href="">Apple 연락처</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <p class="footer_shop">
+                다양한 쇼핑 방법: <a href="">Apple Store</a>를 방문하거나, <a href="">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.
+            </p>
+            <div class="footer_legal">
+                <div>
+                    <p class="footer_copyright">Copyright © 2021 Apple Inc. 모든 권리 보유.</p>
+                    <p class="footer_legal_link">
+                        <a href="">개인정보 처리방침</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="">웹 사이트 이용 약관</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="">판매 및 환불</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="">법적 고지</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="">사이트 맵</a>  
+                    </p>
+                </div>
+                <p class="footer_local"> <a href="">대한민국</a></p>
+            </div>
+
+            <p class="footer_address">   
+            <span>사업자등록번호 : 120-81-84429 | </span>
+            <span>통신판매업신고번호 : 제 2011-서울강남-00810호  | </span> 
+            <span>대표이사 : PETER DENWOOD | </span>
+            <span>주소 : 서울 특별시 강남구 영동대로 517 | </span>
+            <span>대표전화 : 02-6712-6700 | </span> 
+            <span>팩스 : 02-6928-0000</span> 
+            </p>
+        </div> 
+
+    </footer>
+        
 </body>
 </html>
