@@ -431,7 +431,7 @@
   }
 
   .banner_text {
-    width: 300px;
+    width: 320px;
     text-align: center;
     font-size: 14px;
     line-height: 22px;
@@ -449,10 +449,13 @@
   .hero_price_info {
     font-size: 14px;
     line-height: 22px;
-    width: 150px;
     margin: 13.6px auto 0;
   }
 
+  .hero_price_info span {
+    display: block;
+  }
+  
   .hero_link_whitebg,
   .hero_link_blackbg {
     margin: 13.3px 0 0 0;
