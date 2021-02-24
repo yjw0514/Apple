@@ -127,9 +127,10 @@ header {
   }
 
   .gnb_search_m_wrap {
-    width: calc(100% - 80px);
+    max-width: 584px;
+    width: calc(100% - 20px);
     height: 36px;
-    margin: 0 auto;
+    margin: 0 auto 17px;
     background-color: rgba(110, 110, 115, 0.3);
     border-radius: 10px;
     color: rgb(110, 110, 115);
@@ -150,8 +151,10 @@ header {
   }
 
   .gnb_submenu_m {
+    max-width: 584px;
     width: 100%;
-    margin: 20px 0 0 0;
+    /* width: 100%; */
+    margin: 20px auto 0;
     border-top: 1px solid rgba(110, 110, 115, 0.4);
     padding: 0 40px;
   }
