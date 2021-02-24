@@ -22,7 +22,7 @@ header {
   align-items: center;
 }
 
-.gnb_menu_m {
+.gnb_m {
   display: none;
 }
 
@@ -40,7 +40,7 @@ header {
 .gnb_logo a {
   display: block;
   width: 36px;
-  height: 44px;
+  height: 48px;
   background-image: url(../img/globalnav_apple_image__cxwwnrj0urau_large.svg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -71,34 +71,46 @@ header {
   }
 
   .gnb_m {
+    display: block;
     width: 100%;
     height: 48px;
-    padding: 0 12px;
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10000;
+    overflow: hidden;
+    transition: height 0.6s, background-color 0.6s;
   }
 
   .gnb_menu_m {
     width: 100%;
+    height: 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
   }
 
-  .gnb_menubar img {
+  .gnb_menubar img:nth-child(1) {
     width: 20px;
     height: 20px;
     vertical-align: middle;
+    margin: 0 0 0 12px;
+  }
+
+  .gnb_menubar img:nth-child(2) {
+    display: none;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin: 0 0 0 12px;
   }
 
   .gnb_logo_m a {
     display: block;
     width: 38px;
-    height: 48px;
+    height: 44px;
     background-image: url(../img/globalnav_apple_image__cxwwnrj0urau_large.svg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -111,5 +123,51 @@ header {
     background-image: url(../img/globalnav_bag_image__bmix8075eg4i_large.svg);
     background-position: center center;
     background-repeat: no-repeat;
+    margin: 0 12px 0 0;
+  }
+
+  .gnb_search_m_wrap {
+    width: calc(100% - 80px);
+    height: 36px;
+    margin: 0 auto;
+    background-color: rgba(110, 110, 115, 0.3);
+    border-radius: 10px;
+    color: rgb(110, 110, 115);
+    font-size: 17px;
+    line-height: 36px;
+    display: flex;
+    font-family: "SF Pro KR", "SF Pro Text", "SF Pro Icons", sans-serif;
+  }
+
+  .gnb_search_m {
+    width: 36px;
+    height: 36px;
+    display: block;
+    background-image: url(../img/globalnav_search_image__fca9mfoh8a2q_large.svg);
+    background-position: auto auto;
+    background-repeat: no-repeat;
+    background-size: 36px 60px;
+  }
+
+  .gnb_submenu_m {
+    width: 100%;
+    margin: 20px 0 0 0;
+    border-top: 1px solid rgba(110, 110, 115, 0.4);
+    padding: 0 40px;
+  }
+
+  .gnb_submenu_items a {
+    display: block;
+    height: 44px;
+    width: 100%;
+    font-size: 17px;
+    line-height: 44px;
+    color: rgb(245, 245, 247);
+    border-bottom: 1px solid rgba(110, 110, 115, 0.4);
+    font-family: "SF Pro KR", "SF Pro Text", "SF Pro Icons", sans-serif;
+  }
+
+  .gnb_submenu_items:last-child a {
+    border-bottom: none;
   }
 }

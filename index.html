@@ -32,13 +32,33 @@
         </nav>
 
         <!-- Mobile용 gnb -->
-        <nav class="gnb_m">
+        <nav class="gnb_m" id="gnb_m_wrap">
             <ul class="gnb_menu_m">
-                <li class="gnb_menubar"><a href=""><img src="img/menubar_2line.svg"> </a></li>
+                <li class="gnb_menubar">
+                    <img  src="img/menubar_2line.svg"
+                 onclick="menuOpen();" 
+                id="gnb_menuopen">
+                    
+                <img onclick="menuClose()" src="img/menubar_close.svg"
+                id="gnb_menuclose" >
+            </li>
+
                 <li class="gnb_logo_m"><a href=""></a></li>
-                <li class="gnb_bag_m"><a href=""></a></li>
+                <li class="gnb_bag_m" id="gnb_bag_m"><a href=""></a></li>
             </ul>
+                <div class="gnb_search_m_wrap">
+                    <span class="gnb_search_m"></span><span>apple.com 검색</span>
+                </div>
+                <ul class="gnb_submenu_m">
+                    <li class="gnb_submenu_items"><a href="">Mac</a></li>
+                    <li class="gnb_submenu_items"><a href="">iPad</a></li>
+                    <li class="gnb_submenu_items"><a href="">iPhone</a></li>
+                    <li class="gnb_submenu_items"><a href="">Watch</a></li>
+                    <li class="gnb_submenu_items"><a href="">Music</a></li>
+                    <li class="gnb_submenu_items"><a href="">고객지원</a></li>
+                </ul>
         </nav>
+       
     </header>
     <main>
         <!-- banner contents -->
@@ -264,8 +284,37 @@
             <span>팩스 : 02-6928-0000</span> 
             </p>
         </div> 
-
     </footer>
         
+    <script>
+        function menuOpen() {
+            document.getElementById('gnb_m_wrap').
+            style = 'height:100%; background-color: rgba(0,0,0,1);';
+
+            document.getElementById('gnb_menuopen')
+            .style = 'display:none;';
+
+            document.getElementById('gnb_menuclose')
+            .style = 'display:block;';
+
+            document.getElementById('gnb_bag_m')
+            .style = 'visibility:hidden';
+        } 
+
+    
+        function menuClose() {
+            document.getElementById('gnb_m_wrap').
+            style = 'height:48px; background-color: rgba(0,0,0,0.8);';
+
+            document.getElementById('gnb_menuopen')
+            .style = 'display:block;';
+
+            document.getElementById('gnb_menuclose')
+            .style = 'display:none;';
+
+            document.getElementById('gnb_bag_m')
+            .style = 'visibility:visible';
+        } 
+    </script>
 </body>
 </html>

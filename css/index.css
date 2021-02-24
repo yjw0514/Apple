@@ -6,10 +6,10 @@
 }
 
 .banner_text {
-  height: 46px;
+  height: 44px;
   text-align: center;
   font-size: 14px;
-  line-height: 46px;
+  line-height: 44px;
 }
 
 .banner_text a {
@@ -455,18 +455,17 @@
   .hero_price_info span {
     display: block;
   }
-  
+
   .hero_link_whitebg,
   .hero_link_blackbg {
     margin: 13.3px 0 0 0;
   }
 
-  .hero_link_whitebg a ,
+  .hero_link_whitebg a,
   .hero_link_blackbg a {
     font-size: 19px;
     line-height: 25px;
   }
-
 
   .hero_1_wrap,
   .hero_2_wrap,
@@ -485,7 +484,6 @@
     background-image: url(../img/hero_2_m.jpg);
     background-size: 734px 548px;
   }
-
 
   .hero_3_wrap {
     background-image: url(../img/hero_3_m.jpg);
